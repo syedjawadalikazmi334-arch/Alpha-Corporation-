@@ -555,7 +555,13 @@ background-repeat: no-repeat;
   }
     font-size: 40px;
   }
-
+.hero-card {
+  width: 260px;
+  max-width: 90%;
+  margin: 20px auto 0;
+  padding: 22px;
+  border-radius: 14px;
+}
   .hero p {
     font-size: 17px;
     line-height: 1.7;
