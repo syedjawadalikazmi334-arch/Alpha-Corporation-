@@ -544,35 +544,15 @@ background-repeat: no-repeat;
   line-height: 1.6;
   max-width: 650px;
   margin: 0 auto 20px;
-  .hero .btn {
+}
+
+.hero .btn {
   display: inline-block;
   width: auto;
   min-width: 150px;
   margin: 8px 5px;
   padding: 13px 22px;
   border-radius: 8px;
-  }
-  }
-    font-size: 40px;
-  }
-.hero-card {
-  width: 260px;
-  max-width: 90%;
-  margin: 20px auto 0;
-  padding: 22px;
-  border-radius: 14px;
-}
-  .hero p {
-    font-size: 17px;
-    line-height: 1.7;
-  min-height: 680px;
-
-  .hero .btn {
-    display: block;
-    width: 100%;
-    max-width: 360px;
-    margin: 18px auto 0;
-    transition: all 0.25s ease;
   }
 .hero .btn:hover {
     transform: translateY(-2px);
@@ -589,12 +569,6 @@ background-repeat: no-repeat;
   margin-top: 12px;
   border-radius: 14px;
   }
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 500px) {
-
   .hero {
     min-height: 760px;
     padding: 75px 18px 55px;
@@ -626,7 +600,8 @@ background-repeat: no-repeat;
     margin: 0 auto;
     border-radius: 8px;
     cursor: pointer;
-}.location-map-bottom p {
+}
+.location-map-bottom p {
     margin-top: 12px;
     font-size: 14px;
     color: #5b6770;
