@@ -582,3 +582,17 @@ background-repeat: no-repeat;
     padding: 24px;
   }
 }
+.location-map-bottom {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.location-map-bottom img {
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
