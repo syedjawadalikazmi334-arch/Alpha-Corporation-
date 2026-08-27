@@ -622,4 +622,9 @@ background-repeat: no-repeat;
     margin: 0 auto;
     border-radius: 8px;
     cursor: pointer;
+}.location-map-bottom p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #5b6770;
+    line-height: 1.6;
 }
