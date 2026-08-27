@@ -419,15 +419,28 @@ footer strong {
     justify-content: space-between;
     gap: 50px;
     overflow: hidden;
-    background: #061a2b;
+
+    background-image:
+        linear-gradient(rgba(4, 18, 30, 0.58), rgba(4, 18, 30, 0.72)),
+        url("./pexels-tiger-lily-4483774.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(4, 25, 43, 0.25);
+    background: rgba(4, 25, 43, 0.15);
     z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
 }
 
 .hero > * {
