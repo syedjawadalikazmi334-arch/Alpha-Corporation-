@@ -539,7 +539,12 @@ background-repeat: no-repeat;
   font-size: 36px;
   line-height: 1.15;
   margin-bottom: 15px;
-  font-weight: 800;
+  .hero p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 20px;
+  }
   }
     font-size: 40px;
   }
