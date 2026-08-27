@@ -574,7 +574,10 @@ background-repeat: no-repeat;
     margin: 18px auto 0;
     transition: all 0.25s ease;
   }
-
+.hero .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
   .hero .btn.outline {
     margin: 15px auto 0;
   }
