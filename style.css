@@ -579,8 +579,12 @@ background-repeat: no-repeat;
   }
 
   .hero-card {
-    width: 100%;
-    max-width: 360px;
+  padding: 20px;
+  width: 260px;
+  max-width: 85%;
+  margin-top: 18px;
+  border-radius: 14px;
+  }
     margin-top: 25px;
   }
 }
