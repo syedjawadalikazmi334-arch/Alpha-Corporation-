@@ -408,7 +408,8 @@ footer strong {
    MODERN CHEMICAL WAREHOUSE HERO
    ========================================= */
 
-.hero {
+/* MODERN CHEMICAL WAREHOUSE HERO */
+
 .hero {
     position: relative;
     min-height: 680px;
@@ -426,7 +427,6 @@ footer strong {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
 }
 
 /* Dark premium overlay */
