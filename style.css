@@ -536,6 +536,11 @@ background-repeat: no-repeat;
   }
 
   .hero h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin-bottom: 15px;
+  font-weight: 800;
+  }
     font-size: 40px;
   }
 
