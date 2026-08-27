@@ -421,9 +421,6 @@ footer strong {
     overflow: hidden;
 
     background: #05182b;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
 }
 
 /* Light dark overlay */
