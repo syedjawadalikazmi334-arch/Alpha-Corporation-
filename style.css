@@ -427,14 +427,6 @@ footer strong {
 }
 
 /* Light dark overlay */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(5, 24, 40, 0.35);
-    z-index: 0;
-}
-
 /* Keep hero content above background */
 .hero > * {
     position: relative;
