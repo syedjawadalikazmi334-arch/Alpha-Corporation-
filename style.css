@@ -420,13 +420,7 @@ footer strong {
     gap: 50px;
     overflow: hidden;
 
-    background-image:
-        linear-gradient(rgba(5, 24, 40, 0.58), rgba(5, 24, 40, 0.72)),
-        url("./pexels-tiger-lily-4483774.jpg");
-
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: #061a2b;
 }
 
 .hero::before {
