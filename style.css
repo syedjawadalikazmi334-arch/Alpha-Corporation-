@@ -409,22 +409,23 @@ footer strong {
    ========================================= */
 
 .hero {
-  position: relative;
-  min-height: 680px;
-  padding: 100px 6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  overflow: hidden;
+.hero {
+    position: relative;
+    min-height: 680px;
+    padding: 100px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    overflow: hidden;
 
-  background:
-    linear-gradient(rgba(5, 24, 40, 0.72), rgba(5, 24, 40, 0.82)),
-    url("pexels-tiger-lily-4483774.jpg");
+    background:
+        linear-gradient(rgba(5, 24, 40, 0.72), rgba(5, 24, 40, 0.82)),
+        url("./pexels-tiger-lily-4483774.jpg");
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Dark premium overlay */
