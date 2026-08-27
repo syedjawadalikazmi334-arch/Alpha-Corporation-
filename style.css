@@ -420,33 +420,31 @@ footer strong {
     gap: 50px;
     overflow: hidden;
 
-    background-image:
-        linear-gradient(rgba(5, 24, 40, 0.55), rgba(5, 24, 40, 0.70)),
-        url("./pexels-tiger-lily-4483774.jpg");
-
+    background-image: url("./pexels-tiger-lily-4483774.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
 }
 
-/* Dark premium overlay */
+/* Light dark overlay */
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(4, 25, 43, 0.88),
-    rgba(7, 45, 70, 0.55),
-    rgba(4, 25, 43, 0.78)
-  );
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 24, 40, 0.35);
+    z-index: 0;
+}
+
+/* Keep hero content above background */
+.hero > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Keep all hero content above background */
 .hero > * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 /* Hero text */
