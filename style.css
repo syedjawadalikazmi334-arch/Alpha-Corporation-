@@ -219,14 +219,13 @@ section {
   margin-bottom: 15px;
 }
 
-/* PRODUCTS */
-.products {
-  background: #ffffff;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 45px;
+/* About Section Background */
+.about {
+    background-image: url("./pexels-tiger-lily-4483774.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 45px;
 }
 
 .heading h2 {
