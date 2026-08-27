@@ -310,24 +310,24 @@ section {
   color: #d8edf8;
   margin-bottom: 25px;
 }
+.hero {
+  position: relative;
+  min-height: 620px;
+  padding: 90px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  overflow: hidden;
 
-/* FOOTER */
-footer {
-  background: #071522;
-  color: #b9d3e0;
-  text-align: center;
-  padding: 25px 15px;
-  font-size: 14px;
+  background-image:
+    linear-gradient(rgba(4, 18, 30, 0.58), rgba(4, 18, 30, 0.72)),
+    url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=85");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-footer strong {
-  color: var(--light-blue);
-}
-
-/* MOBILE */
-@media (max-width: 850px) {
-  .nav {
-    flex-direction: column;
     padding: 15px;
   }
 
