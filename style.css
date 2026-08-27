@@ -412,40 +412,35 @@ footer strong {
 
 .hero {
     position: relative;
-    min-height: 680px;
-    padding: 100px 6%;
+    min-height: 620px;
+    padding: 90px 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
     overflow: hidden;
 
-    background: #05182b;
+    background-image:
+        linear-gradient(rgba(5, 24, 40, 0.58), rgba(5, 24, 40, 0.72)),
+        url("./pexels-tiger-lily-4483774.jpg");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
-/* Light dark overlay */
-/* Keep hero content above background */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(4, 25, 43, 0.25);
+    z-index: 0;
+}
+
 .hero > * {
     position: relative;
     z-index: 1;
 }
-
-/* Keep all hero content above background */
-.hero > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* Hero text */
-.hero-text {
-  max-width: 720px;
-}
-
-.hero .tag {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-bottom: 22px;
   color: #36c5f0;
   text-transform: uppercase;
 }
