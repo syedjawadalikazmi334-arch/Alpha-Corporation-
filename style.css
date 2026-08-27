@@ -420,8 +420,7 @@ section {
     gap: 50px;
     overflow: hidden;
 
-  background-image: url("pexels-tiger-lily-4483774.jpg");
-background-size: cover;
+  background-image: url("./pexels-tiger-lily-4483774.jpg");
 background-position: center center;
 background-repeat: no-repeat;
 }
