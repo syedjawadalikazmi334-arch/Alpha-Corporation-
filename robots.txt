@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://syedjawadalikazmi334-arch.github.io/Alpha-Corporation/sitemap.xml
+Sitemap: https://syedjawadalikazmi334-arch.github.io/Alpha-Corporation-/sitemap.xml
