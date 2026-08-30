@@ -1,125 +1,1327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alpha Corporation | Chemicals & Raw Materials</title>
-  <meta name="description" content="Alpha Corporation supplies chemicals and raw materials in Rawalpindi, Pakistan.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alpha Corporation | Chemical & Raw Material Supplier</title>
+
+<meta name="description" content="Alpha Corporation is a reliable supplier of Cosmetic, Pharmaceutical, Nutraceutical, Food & Beverage, Laboratory and Industrial Chemicals & Raw Materials in Pakistan.">
+
+<meta name="keywords" content="Alpha Corporation, chemical supplier Pakistan, pharmaceutical raw materials, cosmetic chemicals, nutraceutical chemicals, industrial chemicals, Rawalpindi">
+
+<style>
+
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #10243b;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 92%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 3px solid #08a6df;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-symbol {
+    font-size: 42px;
+    font-weight: 900;
+    color: #0876c9;
+}
+
+.logo-text h2 {
+    color: #0876c9;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.logo-text p {
+    color: #159bb5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+nav a {
+    color: #142235;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #087fd1;
+}
+
+.whatsapp-top {
+    background: #087dcc;
+    color: #ffffff;
+    padding: 13px 20px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp-top:hover {
+    background: #075da0;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO / WAREHOUSE
+========================= */
+
+.hero {
+    min-height: 570px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 20, 38, 0.68),
+            rgba(0, 20, 38, 0.68)
+        ),
+        url("pexels-tiger-lily-4483774.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 850px;
+    padding: 75px 0;
+}
+
+.hero-small {
+    color: #11b9ec;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 0.98;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: #09a7e5;
+}
+
+.hero-description {
+    font-size: 21px;
+    max-width: 760px;
+    margin-bottom: 28px;
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-bottom: 30px;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.feature-icon {
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 34px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-blue {
+    background: #078bd8;
+    color: white;
+}
+
+.btn-blue:hover {
+    background: #056ca9;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid #09a9e7;
+    color: white;
+    background: rgba(0,0,0,0.2);
+}
+
+.btn-outline:hover {
+    background: #09a9e7;
+}
+
+
+/* =========================
+   WAVE DIVIDER
+========================= */
+
+.wave {
+    height: 70px;
+    margin-top: -1px;
+    background: #08a7e3;
+    clip-path: ellipse(75% 70% at 50% 100%);
+}
+
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+.products-section {
+    background: #ffffff;
+    padding: 55px 0 70px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #10243b;
+    margin-bottom: 8px;
+}
+
+.section-title h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #09a7e5;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.section-title p {
+    color: #5b6b7c;
+    font-size: 17px;
+}
+
+
+/* =========================
+   PRODUCT CARDS
+========================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px 22px;
+    border: 1px solid #e4edf4;
+    box-shadow: 0 7px 25px rgba(0, 70, 120, 0.10);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 100, 170, 0.16);
+}
+
+.product-icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.product-card h3 {
+    color: #0877c9;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.product-card ul {
+    padding-left: 18px;
+}
+
+.product-card li {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #25384b;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #078bd8;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background: #f2f8fc;
+    padding: 70px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 38px;
+    color: #10243b;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #526476;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.about-box {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,60,100,0.10);
+    border-left: 5px solid #08a7e3;
+}
+
+.about-box h3 {
+    color: #0877c9;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-us {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: 14px;
+    background: #f7fbfe;
+    border: 1px solid #e1edf5;
+}
+
+.why-card .big-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.why-card h3 {
+    color: #0877c9;
+    margin-bottom: 8px;
+}
+
+.why-card p {
+    color: #647487;
+    font-size: 14px;
+}
+
+
+/* =========================
+   LOCATION SECTION
+========================= */
+
+.location-section {
+    padding: 70px 0;
+    background: #f2f8fc;
+}
+
+.location-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.location-info h2 {
+    font-size: 38px;
+    color: #10243b;
+    margin-bottom: 15px;
+}
+
+.location-info p {
+    color: #53677a;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.location-image {
+    display: block;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,60,100,0.18);
+    transition: 0.3s;
+}
+
+.location-image:hover {
+    transform: scale(1.02);
+}
+
+.location-image img {
+    width: 100%;
+    display: block;
+}
+
+.map-button {
+    display: inline-block;
+    background: #078bd8;
+    color: #ffffff;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+    background: linear-gradient(
+        90deg,
+        #0799df,
+        #075e9e
+    );
+    color: #ffffff;
+    padding: 45px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.contact-icon {
+    font-size: 30px;
+}
+
+.contact-item h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #092b49;
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #d8e7f1;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: none;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-box,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .logo-symbol {
+        font-size: 30px;
+    }
+
+    .logo-text h2 {
+        font-size: 19px;
+    }
+
+    .logo-text p {
+        font-size: 10px;
+    }
+
+    .whatsapp-top {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 620px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-features {
+        gap: 14px;
+    }
+
+    .hero-feature {
+        font-size: 13px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2,
+    .about h2,
+    .location-info h2 {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+</style>
 </head>
+
+
 <body>
-  <header class="header">
-    <div class="container nav">
-      <div class="logo"><span>α</span> ALPHA CORPORATION</div>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav-btn" href="https://wa.me/923129336471" target="_blank">WhatsApp Us</a>
-    </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">CHEMICALS • RAW MATERIALS • SUPPLY</p>
-          <h1>Reliable Chemical & Raw Material Solutions.</h1>
-          <p class="hero-text">
-            Alpha Corporation is your trusted partner for quality chemicals and raw materials,
-            serving businesses with dependable supply and professional service.
-          </p>
-          <div class="actions">
-            <a class="btn primary" href="#products">Explore Products</a>
-            <a class="btn secondary" href="https://wa.me/923129336471" target="_blank">Request a Quote</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="orb"></div>
-          <div class="card-content">
-            <span>ALPHA CORPORATION</span>
-            <strong>Quality. Reliability. Supply.</strong>
-            <small>Serving since 2019</small>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="about" class="section">
-      <div class="container two-col">
-        <div>
-          <p class="eyebrow">ABOUT ALPHA CORPORATION</p>
-          <h2>A professional partner for your supply needs.</h2>
-        </div>
-        <div>
-          <p>
-            Alpha Corporation works in chemicals and raw materials, with a focus on dependable
-            supply, responsive service and long-term business relationships.
-          </p>
-          <p>Based in Rawalpindi, Pakistan, we aim to make sourcing simple and professional for our customers.</p>
-        </div>
-      </div>
-    </section>
+<!-- =========================
+     HEADER
+========================= -->
 
-    <section id="products" class="section light">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">OUR PRODUCTS</p>
-          <h2>Chemicals & Raw Materials</h2>
-          <p>Product categories can be updated here with your exact product list.</p>
-        </div>
-        <div class="cards">
-          <article class="card"><div class="icon">01</div><h3>Industrial Chemicals</h3><p>Reliable chemical materials for industrial and commercial requirements.</p></article>
-          <article class="card"><div class="icon">02</div><h3>Raw Materials</h3><p>Quality raw materials sourced to support your business and production needs.</p></article>
-          <article class="card"><div class="icon">03</div><h3>Custom Requirements</h3><p>Contact us with your required specification, quantity or product name.</p></article>
-        </div>
-      </div>
-    </section>
+<header>
 
-    <section id="why-us" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">WHY CHOOSE US</p>
-          <h2>Built around trust and service.</h2>
-        </div>
-        <div class="features">
-          <div><span>✓</span><h3>Professional Service</h3><p>Clear communication and customer-focused support.</p></div>
-          <div><span>✓</span><h3>Reliable Supply</h3><p>Focused on dependable sourcing and timely response.</p></div>
-          <div><span>✓</span><h3>Business Focused</h3><p>Solutions designed around your chemical and raw-material needs.</p></div>
-        </div>
-      </div>
-    </section>
+<div class="container navbar">
 
-    <section id="contact" class="section contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow">GET IN TOUCH</p>
-          <h2>Let’s discuss your requirement.</h2>
-          <p>For product availability, pricing or a quotation, contact Alpha Corporation directly.</p>
-          <div class="contact-list">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/923129336471">0312-9336471</a></p>
-            <p><strong>Contact:</strong> <a href="tel:+923129336481">0312-9336481</a></p>
-            <p><strong>Email:</strong> <a href="mailto:syedjawadalikazmi07@gmail.com">syedjawadalikazmi07@gmail.com</a></p>
-            <p><strong>Address:</strong> Shop Q6, Main Jamia Masjid Road, Rawalpindi, Pakistan</p>
-          </div>
-        </div>
-        <div class="quote-box">
-          <h3>Request a Quote</h3>
-          <p>Send us your requirement directly on WhatsApp.</p>
-          <a class="btn primary full" href="https://wa.me/923129336471?text=Hello%20Alpha%20Corporation%2C%20I%20would%20like%20to%20request%20a%20quotation." target="_blank">Message on WhatsApp</a>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="logo-area">
 
-  <footer>
-    <div class="container footer">
-      <div class="logo"><span>α</span> ALPHA CORPORATION</div>
-      <p>© 2026 Alpha Corporation. All rights reserved.</p>
-    </div>
-  </footer>
+<div class="logo-symbol">
+AC
+</div>
+
+<div class="logo-text">
+
+<h2>ALPHA CORPORATION</h2>
+
+<p>- Since 2019 -</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="#home">HOME</a>
+
+<a href="#about">ABOUT US</a>
+
+<a href="#products">PRODUCTS</a>
+
+<a href="#why">WHY CHOOSE US</a>
+
+<a href="#location">LOCATION</a>
+
+<a href="#contact">CONTACT US</a>
+
+</nav>
+
+
+<a
+class="whatsapp-top"
+href="https://wa.me/923129336471"
+target="_blank">
+
+💬 WhatsApp Us<br>
+0312-9336471
+
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="home" class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-small">
+WELCOME TO
+</div>
+
+<h1>
+ALPHA
+<span>CORPORATION</span>
+</h1>
+
+<p class="hero-description">
+
+Cosmetic, Pharmaceutical, Nutraceutical,
+Food & Beverage, Laboratory and Industrial
+Raw Materials & Chemical Supplier
+
+</p>
+
+
+<div class="hero-features">
+
+<div class="hero-feature">
+<span class="feature-icon">🛡️</span>
+Premium Quality
+</div>
+
+<div class="hero-feature">
+<span class="feature-icon">🚚</span>
+Timely Delivery
+</div>
+
+<div class="hero-feature">
+<span class="feature-icon">💲</span>
+Competitive Prices
+</div>
+
+<div class="hero-feature">
+<span class="feature-icon">🎧</span>
+Customer Support
+</div>
+
+</div>
+
+
+<div class="hero-buttons">
+
+<a
+href="#products"
+class="btn btn-blue">
+
+View Products
+
+</a>
+
+
+<a
+href="https://wa.me/923129336471?text=Hello%20Alpha%20Corporation%2C%20I%20need%20a%20quotation."
+target="_blank"
+class="btn btn-outline">
+
+Get a Quote
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="wave"></div>
+
+
+
+<!-- =========================
+     PRODUCT LIST
+========================= -->
+
+<section id="products" class="products-section">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>OUR PRODUCT LIST</h2>
+
+<p>
+We provide high quality raw materials & chemicals
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<!-- PHARMACEUTICAL -->
+
+<div class="product-card">
+
+<div class="product-icon">
+💊
+</div>
+
+<h3>
+PHARMACEUTICAL ITEMS
+</h3>
+
+<ul>
+
+<li>Glycerin</li>
+<li>Sorbitol Pharmaceutical Grade</li>
+<li>Vitamin B3</li>
+<li>Ceto Staryle Alcohol</li>
+<li>Paraffin Wax</li>
+<li>Stearic Acid TP</li>
+<li>Xanthan Gum</li>
+<li>Calcium Carbonate</li>
+<li>Itopride</li>
+<li>Olanzapine</li>
+<li>Povidone Iodine</li>
+<li>Terbinafine</li>
+<li>Tranexamic Acid</li>
+<li>Lignocaine</li>
+<li>Phenolphthalein</li>
+<li>Betamethasone DIP</li>
+<li>Zinc Oxide</li>
+<li>Hexamine</li>
+
+</ul>
+
+<a href="#contact" class="more">
+View More...
+</a>
+
+</div>
+
+
+
+<!-- NUTRACEUTICAL -->
+
+<div class="product-card">
+
+<div class="product-icon">
+🌿
+</div>
+
+<h3>
+NUTRACEUTICAL & VITAMINS
+</h3>
+
+<ul>
+
+<li>Alpha Arbutin</li>
+<li>Beta Arbutin</li>
+<li>L-Glutathione</li>
+<li>Dextrose Anhydrous China</li>
+<li>Coconut Oil</li>
+<li>Cocoa Butter</li>
+<li>Shea Butter</li>
+<li>PVP K30</li>
+<li>Vitamin E Beads</li>
+<li>Coenzyme Q10</li>
+<li>Biotin 100%</li>
+<li>Ginkgo Biloba</li>
+<li>Ginseng 20% & 80%</li>
+<li>IV Leaf</li>
+<li>Omega 3 Fish Oil</li>
+<li>Mecobalamine</li>
+
+</ul>
+
+<a href="#contact" class="more">
+View More...
+</a>
+
+</div>
+
+
+
+<!-- COSMETIC -->
+
+<div class="product-card">
+
+<div class="product-icon">
+🧴
+</div>
+
+<h3>
+COSMETIC & PERSONAL CARE
+</h3>
+
+<ul>
+
+<li>Vaseline</li>
+<li>White Oil</li>
+<li>Shampoo Base</li>
+<li>Bees Wax</li>
+<li>Corda Wax</li>
+<li>Croda Wax</li>
+<li>Paraffin Wax</li>
+<li>Carbopol China / USA</li>
+<li>Talcum Powder</li>
+<li>Lactic Acid</li>
+<li>Soap Base</li>
+<li>Soap Noodles</li>
+<li>Fragrances</li>
+<li>Flavors</li>
+<li>Rose Polymer</li>
+<li>Vitamin E</li>
+
+</ul>
+
+<a href="#contact" class="more">
+View More...
+</a>
+
+</div>
+
+
+
+<!-- INDUSTRIAL -->
+
+<div class="product-card">
+
+<div class="product-icon">
+🏭
+</div>
+
+<h3>
+INDUSTRIAL & GENERAL CHEMICALS
+</h3>
+
+<ul>
+
+<li>Kojic Acid</li>
+<li>Calcium Carbonate</li>
+<li>Titanium Dioxide China</li>
+<li>Sodium Bicarbonate</li>
+<li>MEK (Methyl Ethyl Ketone)</li>
+<li>Citric Acid Anhydrous</li>
+<li>CMC China</li>
+<li>Sodium Saccharine</li>
+<li>Kyron T 134</li>
+<li>Carnauba Wax</li>
+<li>T20</li>
+<li>Acetic Acid</li>
+<li>Hydrogen Peroxide</li>
+<li>Primogel</li>
+<li>CMC Sodium</li>
+
+</ul>
+
+<a href="#contact" class="more">
+View More...
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="about">
+
+<div class="container about-grid">
+
+
+<div>
+
+<h2>
+Your Reliable Chemical & Raw Material Partner
+</h2>
+
+<p>
+Alpha Corporation is a professional supplier of
+Cosmetic, Pharmaceutical, Nutraceutical,
+Food & Beverage, Laboratory and Industrial
+Chemicals & Raw Materials in Pakistan.
+</p>
+
+<p>
+We focus on reliable sourcing, competitive
+prices, timely response and professional
+customer service.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>
+ALPHA CORPORATION
+</h3>
+
+<p>
+Established in 2019, Alpha Corporation serves
+manufacturers, laboratories, pharmaceutical
+companies, cosmetic manufacturers and
+other businesses requiring quality chemicals
+and raw materials.
+</p>
+
+<p>
+<strong>
+Quality • Reliability • Competitive Prices
+</strong>
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section id="why" class="why-us">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+WHY CHOOSE US
+</h2>
+
+<p>
+Professional service you can rely on
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="big-icon">
+⭐
+</div>
+
+<h3>
+Premium Quality
+</h3>
+
+<p>
+Quality-focused sourcing for your business requirements.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="big-icon">
+🚚
+</div>
+
+<h3>
+Timely Delivery
+</h3>
+
+<p>
+We work to provide timely and dependable supply.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="big-icon">
+💰
+</div>
+
+<h3>
+Competitive Prices
+</h3>
+
+<p>
+Competitive market-based pricing for customers.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="big-icon">
+🤝
+</div>
+
+<h3>
+Customer Support
+</h3>
+
+<p>
+Professional communication and customer-focused service.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     LOCATION
+========================= -->
+
+<section id="location" class="location-section">
+
+<div class="container location-box">
+
+
+<div class="location-info">
+
+<h2>
+Visit Our Location
+</h2>
+
+<p>
+Alpha Corporation
+</p>
+
+<p>
+Shop Q6, Main Jamia Masjid Road,
+Rawalpindi, Pakistan.
+</p>
+
+<p>
+Click the location button to open
+our location directly in Google Maps.
+</p>
+
+
+<a
+class="map-button"
+href="https://www.google.com/maps/search/?api=1&query=Shop+Q6+Main+Jamia+Masjid+Road+Rawalpindi+Pakistan"
+target="_blank">
+
+📍 Open Google Maps
+
+</a>
+
+</div>
+
+
+
+<!-- LOCATION IMAGE -->
+
+<a
+class="location-image"
+href="https://www.google.com/maps/search/?api=1&query=Shop+Q6+Main+Jamia+Masjid+Road+Rawalpindi+Pakistan"
+target="_blank">
+
+<img
+src="LocationMap.jpg"
+alt="Alpha Corporation Location Map">
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact">
+
+<div class="container contact-grid">
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📞
+</div>
+
+<div>
+
+<h4>
+CALL US
+</h4>
+
+<a href="tel:+923129336471">
+0312-9336471
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📱
+</div>
+
+<div>
+
+<h4>
+CONTACT
+</h4>
+
+<a href="tel:+923129336481">
+0312-9336481
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+✉️
+</div>
+
+<div>
+
+<h4>
+EMAIL
+</h4>
+
+<a href="mailto:syedjawadalikazmi07@gmail.com">
+syedjawadalikazmi07@gmail.com
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📍
+</div>
+
+<div>
+
+<h4>
+ADDRESS
+</h4>
+
+<p>
+Shop Q6 Main Jamia Masjid Road,
+Rawalpindi, Pakistan
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<p>
+© 2026 Alpha Corporation. All Rights Reserved.
+</p>
+
+<p>
+Cosmetic • Pharmaceutical • Nutraceutical •
+Food & Beverage • Laboratory • Industrial Chemicals
+</p>
+
+</div>
+
+</footer>
+
+
 </body>
-</html>
+  </html>
