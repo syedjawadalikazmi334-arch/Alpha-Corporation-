@@ -1,629 +1,728 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Alpha Corporation | Chemical & Raw Material Supplier</title>
+<title>Alpha Corporation | Chemicals & Raw Materials Supplier</title>
 
-<meta name="description" content="Alpha Corporation is a reliable supplier of Cosmetic, Pharmaceutical, Nutraceutical, Food & Beverage, Laboratory and Industrial Chemicals & Raw Materials in Pakistan.">
+<meta name="description" content="Alpha Corporation is a trusted supplier of Cosmetic, Pharmaceutical, Nutraceutical, Food & Beverage, Laboratory and Industrial Chemicals & Raw Materials in Pakistan.">
 
-<meta name="keywords" content="Alpha Corporation, chemical supplier Pakistan, pharmaceutical raw materials, cosmetic chemicals, nutraceutical chemicals, industrial chemicals, Rawalpindi">
+<meta name="keywords" content="Alpha Corporation, chemical supplier Pakistan, raw materials supplier, pharmaceutical chemicals, cosmetic chemicals, nutraceutical chemicals, industrial chemicals, Rawalpindi">
 
 <style>
 
-/* =========================
-   GLOBAL SETTINGS
-========================= */
+/* =====================================================
+   GLOBAL
+===================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #10243b;
-    background: #ffffff;
-    line-height: 1.6;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#10233f;
+    line-height:1.6;
 }
 
-a {
-    text-decoration: none;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-.container {
-    width: 92%;
-    max-width: 1250px;
-    margin: auto;
+.container{
+    width:92%;
+    max-width:1400px;
+    margin:auto;
 }
 
 
-/* =========================
+/* =====================================================
    HEADER
-========================= */
+===================================================== */
 
-header {
-    background: #ffffff;
-    border-bottom: 3px solid #08a6df;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:#ffffff;
+    border-bottom:1px solid #e5eaf0;
+    box-shadow:0 3px 18px rgba(0,0,0,0.08);
 }
 
-.navbar {
-    min-height: 88px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+.navbar{
+    min-height:88px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
 }
 
-.logo-area {
-    display: flex;
-.logo-area {
-    display: flex;
-    align-items: center;
+.logo{
+    display:flex;
+    align-items:center;
 }
 
-.company-logo {
-    width: 110px;
-    height: 110px;
-    object-fit: contain;
-    display: block;
-}
-    color: #0876c9;
-    font-size: 25px;
-    line-height: 1;
-    letter-spacing: 1px;
+.logo img{
+    width:270px;
+    max-width:100%;
+    height:72px;
+    object-fit:contain;
+    object-position:left center;
 }
 
-.logo-text p {
-    color: #159bb5;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
+nav{
+    display:flex;
+    align-items:center;
+    gap:32px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 27px;
+nav a{
+    font-size:14px;
+    font-weight:700;
+    color:#13233d;
+    transition:0.3s;
 }
 
-nav a {
-    color: #142235;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
+nav a:hover{
+    color:#087bd1;
 }
 
-nav a:hover {
-    color: #087fd1;
+.quote-btn{
+    background:#0757c9;
+    color:#ffffff;
+    padding:14px 24px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:700;
+    transition:0.3s;
 }
 
-.whatsapp-top {
-    background: #087dcc;
-    color: #ffffff;
-    padding: 13px 20px;
-    border-radius: 9px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.whatsapp-top:hover {
-    background: #075da0;
-    transform: translateY(-2px);
+.quote-btn:hover{
+    background:#003e99;
+    transform:translateY(-2px);
 }
 
 
-/* =========================
-   HERO / WAREHOUSE
-========================= */
+/* =====================================================
+   HERO
+===================================================== */
 
-.hero {
-    min-height: 570px;
+.hero{
 
-    background-image:
+    min-height:470px;
+
+    display:flex;
+    align-items:center;
+
+    background:
         linear-gradient(
-            rgba(0, 20, 38, 0.68),
-            rgba(0, 20, 38, 0.68)
+            90deg,
+            rgba(4,19,38,0.96) 0%,
+            rgba(4,19,38,0.82) 38%,
+            rgba(4,19,38,0.35) 72%,
+            rgba(4,19,38,0.18) 100%
         ),
         url("pexels-tiger-lily-4483774.jpg");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.hero-content {
-    color: white;
-    max-width: 850px;
-    padding: 75px 0;
+.hero-content{
+    padding:65px 0;
+    max-width:760px;
+    color:#ffffff;
 }
 
-.hero-small {
-    color: #11b9ec;
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 8px;
+.hero-label{
+    display:inline-block;
+    background:#075bd0;
+    color:#ffffff;
+    padding:7px 14px;
+    border-radius:4px;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:12px;
 }
 
-.hero h1 {
-    font-size: clamp(48px, 7vw, 82px);
-    line-height: 0.98;
-    margin-bottom: 20px;
-    font-weight: 900;
+.hero h1{
+    font-size:52px;
+    line-height:1.05;
+    font-weight:800;
+    margin-bottom:16px;
 }
 
-.hero h1 span {
-    color: #09a7e5;
+.hero h1 span{
+    color:#008de0;
 }
 
-.hero-description {
-    font-size: 21px;
-    max-width: 760px;
-    margin-bottom: 28px;
+.hero-description{
+    font-size:17px;
+    max-width:700px;
+    margin-bottom:25px;
+    color:#f2f5f8;
 }
 
-.hero-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
-    margin-bottom: 30px;
+.hero-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0;
+    margin-bottom:28px;
 }
 
-.hero-feature {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    font-weight: bold;
-    font-size: 15px;
+.hero-feature{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:0 20px;
+    border-right:1px solid rgba(255,255,255,0.45);
+    font-size:14px;
 }
 
-.feature-icon {
-    font-size: 27px;
-    color: #ffffff;
+.hero-feature:first-child{
+    padding-left:0;
 }
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.hero-feature:last-child{
+    border-right:none;
 }
 
-.btn {
-    display: inline-block;
-    padding: 15px 34px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.3s;
+.feature-icon{
+    width:38px;
+    height:38px;
+    border:1px solid #00a5ed;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
 }
 
-.btn-blue {
-    background: #078bd8;
-    color: white;
+.hero-buttons{
+    display:flex;
+    gap:20px;
 }
 
-.btn-blue:hover {
-    background: #056ca9;
-    transform: translateY(-2px);
+.btn{
+    display:inline-block;
+    padding:13px 27px;
+    border-radius:4px;
+    font-size:14px;
+    font-weight:700;
+    transition:0.3s;
 }
 
-.btn-outline {
-    border: 2px solid #09a9e7;
-    color: white;
-    background: rgba(0,0,0,0.2);
+.btn-primary{
+    background:#075bd0;
+    color:white;
 }
 
-.btn-outline:hover {
-    background: #09a9e7;
+.btn-primary:hover{
+    background:#00439d;
+}
+
+.btn-secondary{
+    border:1px solid white;
+    color:white;
+    background:rgba(0,0,0,0.15);
+}
+
+.btn-secondary:hover{
+    background:#ffffff;
+    color:#075bd0;
 }
 
 
-/* =========================
-   WAVE DIVIDER
-========================= */
-
-.wave {
-    height: 70px;
-    margin-top: -1px;
-    background: #08a7e3;
-    clip-path: ellipse(75% 70% at 50% 100%);
-}
-
-
-/* =========================
+/* =====================================================
    PRODUCT SECTION
-========================= */
+===================================================== */
 
-.products-section {
-    background: #ffffff;
-    padding: 55px 0 70px;
+.products{
+    padding:48px 0 25px;
+    background:#ffffff;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
+.section-heading{
+    text-align:center;
+    margin-bottom:28px;
 }
 
-.section-title h2 {
-    font-size: 36px;
-    color: #10243b;
-    margin-bottom: 8px;
+.section-small{
+    color:#075bd0;
+    font-size:13px;
+    font-weight:800;
+    text-transform:uppercase;
+    margin-bottom:5px;
 }
 
-.section-title h2::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 4px;
-    background: #09a7e5;
-    margin: 10px auto;
-    border-radius: 5px;
+.section-heading h2{
+    font-size:30px;
+    color:#10233f;
 }
 
-.section-title p {
-    color: #5b6b7c;
-    font-size: 17px;
+.section-heading h2 span{
+    color:#075bd0;
 }
 
-
-/* =========================
-   PRODUCT CARDS
-========================= */
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-}
-
-.product-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 25px 22px;
-    border: 1px solid #e4edf4;
-    box-shadow: 0 7px 25px rgba(0, 70, 120, 0.10);
-    transition: 0.3s;
-}
-
-.product-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 100, 170, 0.16);
-}
-
-.product-icon {
-    font-size: 35px;
-    margin-bottom: 8px;
-}
-
-.product-card h3 {
-    color: #0877c9;
-    font-size: 19px;
-    margin-bottom: 15px;
-}
-
-.product-card ul {
-    padding-left: 18px;
-}
-
-.product-card li {
-    margin-bottom: 7px;
-    font-size: 14px;
-    color: #25384b;
-}
-
-.more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #078bd8;
-    font-weight: bold;
+.heading-line{
+    width:42px;
+    height:3px;
+    background:#075bd0;
+    margin:9px auto;
 }
 
 
-/* =========================
-   ABOUT SECTION
-========================= */
+/* =====================================================
+   PRODUCT GRID
+===================================================== */
 
-.about {
-    background: #f2f8fc;
-    padding: 70px 0;
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:18px;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+.product-card{
+    background:#ffffff;
+    border:1px solid #e4e9ef;
+    border-radius:7px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,30,70,0.08);
+    transition:0.3s;
 }
 
-.about h2 {
-    font-size: 38px;
-    color: #10243b;
-    margin-bottom: 20px;
+.product-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,40,100,0.15);
 }
 
-.about p {
-    color: #526476;
-    font-size: 17px;
-    margin-bottom: 15px;
+.product-image{
+    height:100px;
+    overflow:hidden;
+    background:#edf3f8;
 }
 
-.about-box {
-    background: #ffffff;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0,60,100,0.10);
-    border-left: 5px solid #08a7e3;
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
-.about-box h3 {
-    color: #0877c9;
-    margin-bottom: 15px;
+.product-content{
+    padding:13px;
 }
 
-
-/* =========================
-   WHY CHOOSE US
-========================= */
-
-.why-us {
-    padding: 70px 0;
-    background: #ffffff;
+.product-title{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    color:#10233f;
+    font-size:12px;
+    font-weight:800;
+    line-height:1.3;
+    min-height:34px;
+    margin-bottom:8px;
 }
 
-.why-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+.product-icon{
+    width:25px;
+    height:25px;
+    min-width:25px;
+    border-radius:50%;
+    background:#075bd0;
+    color:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
 }
 
-.why-card {
-    text-align: center;
-    padding: 28px 20px;
-    border-radius: 14px;
-    background: #f7fbfe;
-    border: 1px solid #e1edf5;
+.product-card ul{
+    padding-left:17px;
+    min-height:105px;
 }
 
-.why-card .big-icon {
-    font-size: 40px;
-    margin-bottom: 12px;
+.product-card li{
+    font-size:12px;
+    color:#263952;
+    margin-bottom:4px;
 }
 
-.why-card h3 {
-    color: #0877c9;
-    margin-bottom: 8px;
-}
-
-.why-card p {
-    color: #647487;
-    font-size: 14px;
-}
-
-
-/* =========================
-   LOCATION SECTION
-========================= */
-
-.location-section {
-    padding: 70px 0;
-    background: #f2f8fc;
-}
-
-.location-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.location-info h2 {
-    font-size: 38px;
-    color: #10243b;
-    margin-bottom: 15px;
-}
-
-.location-info p {
-    color: #53677a;
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
-.location-image {
-    display: block;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,60,100,0.18);
-    transition: 0.3s;
-}
-
-.location-image:hover {
-<div class="logo-area">
-
-<img src="IMG-20250917-WA1735.jpg"
-     alt="Alpha Corporation Logo"
-     class="company-logo">
-
-</div>
-    border-radius: 8px;
-    font-weight: bold;
+.view-more{
+    color:#075bd0;
+    font-size:12px;
+    font-weight:800;
 }
 
 
-/* =========================
-   CONTACT SECTION
-========================= */
+/* =====================================================
+   STATS
+===================================================== */
 
-.contact {
-    background: linear-gradient(
-        90deg,
-        #0799df,
-        #075e9e
-    );
-    color: #ffffff;
-    padding: 45px 0;
+.stats{
+    margin:10px 0 0;
+    background:#f4f7fc;
+    border-radius:8px;
+    padding:16px 20px;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
 }
 
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 13px;
+.stat{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    border-right:1px solid #aebbd0;
 }
 
-.contact-icon {
-    font-size: 30px;
+.stat:last-child{
+    border-right:none;
 }
 
-.contact-item h4 {
-    font-size: 15px;
-    margin-bottom: 4px;
+.stat-icon{
+    font-size:27px;
+    color:#075bd0;
+}
+
+.stat-number{
+    color:#075bd0;
+    font-size:21px;
+    font-weight:800;
+}
+
+.stat-text{
+    font-size:11px;
+    color:#1b2e48;
+    font-weight:600;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+    padding:65px 0;
+    background:#ffffff;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about h2{
+    font-size:36px;
+    color:#10233f;
+    margin-bottom:18px;
+}
+
+.about h2 span{
+    color:#075bd0;
+}
+
+.about p{
+    color:#596b80;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.about-box{
+    background:#f5f8fc;
+    border-left:5px solid #075bd0;
+    padding:32px;
+    border-radius:7px;
+}
+
+.about-box h3{
+    color:#075bd0;
+    font-size:23px;
+    margin-bottom:12px;
+}
+
+
+/* =====================================================
+   INDUSTRIES
+===================================================== */
+
+.industries{
+    padding:55px 0;
+    background:#f5f8fc;
+}
+
+.industry-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.industry-card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:8px;
+    border:1px solid #e1e8f0;
+    box-shadow:0 5px 18px rgba(0,40,80,0.07);
+}
+
+.industry-card h3{
+    color:#075bd0;
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.industry-card p{
+    color:#617286;
+    font-size:14px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+    background:linear-gradient(90deg,#031d3b,#052b56);
+    color:#ffffff;
+    padding:27px 0 16px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:8px 25px;
+    border-right:1px solid rgba(255,255,255,0.35);
+}
+
+.contact-item:last-child{
+    border-right:none;
+}
+
+.contact-icon{
+    width:47px;
+    height:47px;
+    min-width:47px;
+    border-radius:50%;
+    background:#075bd0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.contact-item h4{
+    font-size:12px;
+    color:#bcd0e8;
+    margin-bottom:2px;
 }
 
 .contact-item p,
-.contact-item a {
-    color: #ffffff;
-    font-size: 15px;
+.contact-item a{
+    font-size:16px;
+    color:#ffffff;
+}
+
+.whatsapp-icon{
+    background:#20b85a;
 }
 
 
-/* =========================
+/* =====================================================
    FOOTER
-========================= */
+===================================================== */
 
-footer {
-    background: #092b49;
-    color: #ffffff;
-    padding: 25px 0;
-    text-align: center;
+footer{
+    background:#03172d;
+    color:#ffffff;
+    text-align:center;
+    padding:14px 0;
 }
 
-footer p {
-    font-size: 14px;
-    color: #d8e7f1;
+footer p{
+    font-size:12px;
+    color:#d5e0ec;
+    margin:2px 0;
 }
 
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* =====================================================
+   MOBILE
+===================================================== */
 
-@media (max-width: 1000px) {
+@media(max-width:1100px){
 
-    nav {
-        display: none;
+    nav{
+        display:none;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .product-grid{
+        grid-template-columns:repeat(3,1fr);
     }
 
-    .why-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .stats-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:15px;
     }
 
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .location-box,
-    .about-grid {
-        grid-template-columns: 1fr;
+    .stat{
+        border-right:none;
     }
 }
 
 
-@media (max-width: 650px) {
+@media(max-width:750px){
 
-    .navbar {
-        min-height: 75px;
+    .navbar{
+        min-height:75px;
     }
 
-    .logo-symbol {
-        font-size: 30px;
+    .logo img{
+        width:190px;
+        height:60px;
     }
 
-    .logo-text h2 {
-        font-size: 19px;
+    .quote-btn{
+        padding:10px 13px;
+        font-size:11px;
     }
 
-    .logo-text p {
-        font-size: 10px;
+    .hero{
+        min-height:560px;
+        background-position:center;
     }
 
-    .whatsapp-top {
-        padding: 9px 12px;
-        font-size: 12px;
+    .hero-content{
+        padding:50px 0;
     }
 
-    .hero {
-        min-height: 620px;
-        background-position: center;
+    .hero h1{
+        font-size:40px;
     }
 
-    .hero-content {
-        padding: 55px 0;
+    .hero-description{
+        font-size:15px;
     }
 
-    .hero h1 {
-        font-size: 48px;
+    .hero-features{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:12px;
     }
 
-    .hero-description {
-        font-size: 17px;
+    .hero-feature{
+        border-right:none;
+        padding:0;
+        font-size:12px;
     }
 
-    .hero-features {
-        gap: 14px;
+    .hero-feature:first-child{
+        padding-left:0;
     }
 
-    .hero-feature {
-        font-size: 13px;
+    .hero-buttons{
+        flex-direction:column;
+        align-items:flex-start;
     }
 
-    .product-grid {
-        grid-template-columns: 1fr;
+    .btn{
+        width:100%;
+        text-align:center;
     }
 
-    .why-grid {
-        grid-template-columns: 1fr;
+    .product-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .section-title h2,
-    .about h2,
-    .location-info h2 {
-        font-size: 30px;
+    .about-grid{
+        grid-template-columns:1fr;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
+    .industry-grid{
+        grid-template-columns:1fr;
     }
 
-    .btn {
-        width: 100%;
-        text-align: center;
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-item{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.2);
+        padding:15px 5px;
+    }
+
+    .contact-item:last-child{
+        border-bottom:none;
+    }
+}
+
+
+@media(max-width:480px){
+
+    .logo img{
+        width:165px;
+        height:55px;
+    }
+
+    .quote-btn{
+        padding:9px 10px;
+        font-size:10px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero-label{
+        font-size:11px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat{
+        justify-content:flex-start;
+    }
+
+    .section-heading h2{
+        font-size:25px;
+    }
+
+    .about h2{
+        font-size:29px;
     }
 }
 
@@ -634,29 +733,21 @@ footer p {
 <body>
 
 
-<!-- =========================
+<!-- =====================================================
      HEADER
-========================= -->
+===================================================== -->
 
 <header>
 
 <div class="container navbar">
 
-<div class="logo-area">
+<a href="#home" class="logo">
 
-<div class="logo-symbol">
-AC
-</div>
+<img
+src="IMG-20250917-WA1735.jpg"
+alt="Alpha Corporation Logo">
 
-<div class="logo-text">
-
-<h2>ALPHA CORPORATION</h2>
-
-<p>- Since 2019 -</p>
-
-</div>
-
-</div>
+</a>
 
 
 <nav>
@@ -667,9 +758,9 @@ AC
 
 <a href="#products">PRODUCTS</a>
 
-<a href="#why">WHY CHOOSE US</a>
+<a href="#industries">INDUSTRIES</a>
 
-<a href="#location">LOCATION</a>
+<a href="#quality">QUALITY</a>
 
 <a href="#contact">CONTACT US</a>
 
@@ -677,12 +768,11 @@ AC
 
 
 <a
-class="whatsapp-top"
-href="https://wa.me/923129336471"
+class="quote-btn"
+href="https://wa.me/923129336471?text=Hello%20Alpha%20Corporation%2C%20I%20need%20a%20quotation."
 target="_blank">
 
-💬 WhatsApp Us<br>
-0312-9336471
+GET A QUOTE ✈
 
 </a>
 
@@ -692,53 +782,91 @@ target="_blank">
 
 
 
-<!-- =========================
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
 <section id="home" class="hero">
 
 <div class="container hero-content">
 
-<div class="hero-small">
-WELCOME TO
+
+<div class="hero-label">
+
+PREMIUM QUALITY CHEMICALS & RAW MATERIALS SUPPLIER
+
 </div>
 
+
 <h1>
-ALPHA
-<span>CORPORATION</span>
+
+Your Trusted Partner in
+<br>
+
+Chemicals & <span>Raw Materials</span>
+
 </h1>
+
 
 <p class="hero-description">
 
-Cosmetic, Pharmaceutical, Nutraceutical,
-Food & Beverage, Laboratory and Industrial
-Raw Materials & Chemical Supplier
+Alpha Corporation is a reliable supplier of high-quality
+cosmetic, pharmaceutical, nutraceutical, food & beverage,
+laboratory and industrial chemicals and raw materials.
 
 </p>
 
 
 <div class="hero-features">
 
+
 <div class="hero-feature">
+
 <span class="feature-icon">🛡️</span>
-Premium Quality
+
+<div>
+<strong>Premium Quality</strong><br>
+100% Pure & Tested
 </div>
 
+</div>
+
+
 <div class="hero-feature">
+
 <span class="feature-icon">🚚</span>
-Timely Delivery
+
+<div>
+<strong>Timely Delivery</strong><br>
+On Time, Every Time
 </div>
 
-<div class="hero-feature">
-<span class="feature-icon">💲</span>
-Competitive Prices
 </div>
 
+
 <div class="hero-feature">
+
+<span class="feature-icon">＄</span>
+
+<div>
+<strong>Competitive Prices</strong><br>
+Best Value Guarantee
+</div>
+
+</div>
+
+
+<div class="hero-feature">
+
 <span class="feature-icon">🎧</span>
-Customer Support
+
+<div>
+<strong>Customer Support</strong><br>
+Professional Assistance
 </div>
+
+</div>
+
 
 </div>
 
@@ -747,9 +875,9 @@ Customer Support
 
 <a
 href="#products"
-class="btn btn-blue">
+class="btn btn-primary">
 
-View Products
+VIEW PRODUCTS →
 
 </a>
 
@@ -757,41 +885,44 @@ View Products
 <a
 href="https://wa.me/923129336471?text=Hello%20Alpha%20Corporation%2C%20I%20need%20a%20quotation."
 target="_blank"
-class="btn btn-outline">
+class="btn btn-secondary">
 
-Get a Quote
+GET A QUOTE →
 
 </a>
 
 </div>
+
 
 </div>
 
 </section>
 
 
-<div class="wave"></div>
 
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
 
-
-<!-- =========================
-     PRODUCT LIST
-========================= -->
-
-<section id="products" class="products-section">
+<section id="products" class="products">
 
 <div class="container">
 
 
-<div class="section-title">
+<div class="section-heading">
 
-<h2>OUR PRODUCT LIST</h2>
+<div class="section-small">
+OUR PRODUCT RANGE
+</div>
 
-<p>
-We provide high quality raw materials & chemicals
-</p>
+<div class="heading-line"></div>
+
+<h2>
+High Quality <span>Chemicals & Raw Materials</span>
+</h2>
 
 </div>
+
 
 
 <div class="product-grid">
@@ -801,13 +932,23 @@ We provide high quality raw materials & chemicals
 
 <div class="product-card">
 
-<div class="product-icon">
-💊
+<div class="product-image">
+
+<img
+src="pexels-tiger-lily-4483774.jpg"
+alt="Pharmaceutical Chemicals">
+
 </div>
 
-<h3>
+<div class="product-content">
+
+<div class="product-title">
+
+<span class="product-icon">💊</span>
+
 PHARMACEUTICAL ITEMS
-</h3>
+
+</div>
 
 <ul>
 
@@ -819,22 +960,14 @@ PHARMACEUTICAL ITEMS
 <li>Stearic Acid TP</li>
 <li>Xanthan Gum</li>
 <li>Calcium Carbonate</li>
-<li>Itopride</li>
-<li>Olanzapine</li>
-<li>Povidone Iodine</li>
-<li>Terbinafine</li>
-<li>Tranexamic Acid</li>
-<li>Lignocaine</li>
-<li>Phenolphthalein</li>
-<li>Betamethasone DIP</li>
-<li>Zinc Oxide</li>
-<li>Hexamine</li>
 
 </ul>
 
-<a href="#contact" class="more">
-View More...
+<a href="#contact" class="view-more">
+View More →
 </a>
+
+</div>
 
 </div>
 
@@ -844,13 +977,23 @@ View More...
 
 <div class="product-card">
 
-<div class="product-icon">
-🌿
+<div class="product-image">
+
+<img
+src="pexels-tiger-lily-4483774.jpg"
+alt="Nutraceutical Raw Materials">
+
 </div>
 
-<h3>
+<div class="product-content">
+
+<div class="product-title">
+
+<span class="product-icon">🌿</span>
+
 NUTRACEUTICAL & VITAMINS
-</h3>
+
+</div>
 
 <ul>
 
@@ -862,20 +1005,14 @@ NUTRACEUTICAL & VITAMINS
 <li>Cocoa Butter</li>
 <li>Shea Butter</li>
 <li>PVP K30</li>
-<li>Vitamin E Beads</li>
-<li>Coenzyme Q10</li>
-<li>Biotin 100%</li>
-<li>Ginkgo Biloba</li>
-<li>Ginseng 20% & 80%</li>
-<li>IV Leaf</li>
-<li>Omega 3 Fish Oil</li>
-<li>Mecobalamine</li>
 
 </ul>
 
-<a href="#contact" class="more">
-View More...
+<a href="#contact" class="view-more">
+View More →
 </a>
+
+</div>
 
 </div>
 
@@ -885,13 +1022,23 @@ View More...
 
 <div class="product-card">
 
-<div class="product-icon">
-🧴
+<div class="product-image">
+
+<img
+src="pexels-tiger-lily-4483774.jpg"
+alt="Cosmetic Raw Materials">
+
 </div>
 
-<h3>
+<div class="product-content">
+
+<div class="product-title">
+
+<span class="product-icon">🧴</span>
+
 COSMETIC & PERSONAL CARE
-</h3>
+
+</div>
 
 <ul>
 
@@ -903,20 +1050,104 @@ COSMETIC & PERSONAL CARE
 <li>Croda Wax</li>
 <li>Paraffin Wax</li>
 <li>Carbopol China / USA</li>
-<li>Talcum Powder</li>
-<li>Lactic Acid</li>
-<li>Soap Base</li>
-<li>Soap Noodles</li>
-<li>Fragrances</li>
-<li>Flavors</li>
-<li>Rose Polymer</li>
-<li>Vitamin E</li>
 
 </ul>
 
-<a href="#contact" class="more">
-View More...
+<a href="#contact" class="view-more">
+View More →
 </a>
+
+</div>
+
+</div>
+
+
+
+<!-- FOOD -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="pexels-tiger-lily-4483774.jpg"
+alt="Food Beverage Ingredients">
+
+</div>
+
+<div class="product-content">
+
+<div class="product-title">
+
+<span class="product-icon">🧪</span>
+
+FOOD & BEVERAGE INGREDIENTS
+
+</div>
+
+<ul>
+
+<li>Citric Acid</li>
+<li>Sodium Benzoate</li>
+<li>Ascorbic Acid</li>
+<li>Xylitol</li>
+<li>CMC</li>
+<li>Sodium Saccharine</li>
+<li>Dextrose</li>
+<li>Food Ingredients</li>
+
+</ul>
+
+<a href="#contact" class="view-more">
+View More →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- LABORATORY -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="pexels-tiger-lily-4483774.jpg"
+alt="Laboratory Chemicals">
+
+</div>
+
+<div class="product-content">
+
+<div class="product-title">
+
+<span class="product-icon">⚗️</span>
+
+LABORATORY CHEMICALS
+
+</div>
+
+<ul>
+
+<li>Ethanol</li>
+<li>Methanol</li>
+<li>Acetone</li>
+<li>Hydrochloric Acid</li>
+<li>Sodium Hydroxide</li>
+<li>Laboratory Reagents</li>
+<li>Solvents</li>
+<li>Lab Chemicals</li>
+
+</ul>
+
+<a href="#contact" class="view-more">
+View More →
+</a>
+
+</div>
 
 </div>
 
@@ -926,42 +1157,123 @@ View More...
 
 <div class="product-card">
 
-<div class="product-icon">
-🏭
+<div class="product-image">
+
+<img
+src="pexels-tiger-lily-4483774.jpg"
+alt="Industrial Chemicals">
+
 </div>
 
-<h3>
+<div class="product-content">
+
+<div class="product-title">
+
+<span class="product-icon">🏭</span>
+
 INDUSTRIAL & GENERAL CHEMICALS
-</h3>
+
+</div>
 
 <ul>
 
 <li>Kojic Acid</li>
-<li>Calcium Carbonate</li>
 <li>Titanium Dioxide China</li>
 <li>Sodium Bicarbonate</li>
-<li>MEK (Methyl Ethyl Ketone)</li>
+<li>MEK</li>
 <li>Citric Acid Anhydrous</li>
 <li>CMC China</li>
-<li>Sodium Saccharine</li>
-<li>Kyron T 134</li>
-<li>Carnauba Wax</li>
-<li>T20</li>
-<li>Acetic Acid</li>
 <li>Hydrogen Peroxide</li>
-<li>Primogel</li>
-<li>CMC Sodium</li>
+<li>Acetic Acid</li>
 
 </ul>
 
-<a href="#contact" class="more">
-View More...
+<a href="#contact" class="view-more">
+View More →
 </a>
 
 </div>
 
+</div>
+
 
 </div>
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<div class="stats">
+
+<div class="stats-grid">
+
+
+<div class="stat">
+
+<div class="stat-icon">👥</div>
+
+<div>
+<div class="stat-number">500+</div>
+<div class="stat-text">Happy Clients</div>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">📦</div>
+
+<div>
+<div class="stat-number">1000+</div>
+<div class="stat-text">Products</div>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">🏭</div>
+
+<div>
+<div class="stat-number">10+</div>
+<div class="stat-text">Industries Served</div>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">🛡️</div>
+
+<div>
+<div class="stat-number">100%</div>
+<div class="stat-text">Quality Assurance</div>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">🚚</div>
+
+<div>
+<div class="stat-number">On Time</div>
+<div class="stat-text">Delivery Everywhere</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
 
 </div>
 
@@ -969,9 +1281,9 @@ View More...
 
 
 
-<!-- =========================
+<!-- =====================================================
      ABOUT
-========================= -->
+===================================================== -->
 
 <section id="about" class="about">
 
@@ -980,21 +1292,32 @@ View More...
 
 <div>
 
+<div class="section-small">
+ABOUT ALPHA CORPORATION
+</div>
+
 <h2>
-Your Reliable Chemical & Raw Material Partner
+
+Your Reliable Partner in
+<span>Chemicals & Raw Materials</span>
+
 </h2>
 
 <p>
+
 Alpha Corporation is a professional supplier of
 Cosmetic, Pharmaceutical, Nutraceutical,
 Food & Beverage, Laboratory and Industrial
 Chemicals & Raw Materials in Pakistan.
+
 </p>
 
 <p>
+
 We focus on reliable sourcing, competitive
-prices, timely response and professional
-customer service.
+market prices, timely response and professional
+customer service for manufacturers and businesses.
+
 </p>
 
 </div>
@@ -1007,17 +1330,20 @@ ALPHA CORPORATION
 </h3>
 
 <p>
-Established in 2019, Alpha Corporation serves
-manufacturers, laboratories, pharmaceutical
-companies, cosmetic manufacturers and
-other businesses requiring quality chemicals
-and raw materials.
+
+Established in 2019, Alpha Corporation provides
+quality chemicals and raw materials for cosmetic,
+pharmaceutical, nutraceutical, food & beverage,
+laboratory and industrial requirements.
+
 </p>
 
 <p>
+
 <strong>
 Quality • Reliability • Competitive Prices
 </strong>
+
 </p>
 
 </div>
@@ -1029,293 +1355,19 @@ Quality • Reliability • Competitive Prices
 
 
 
-<!-- =========================
-     WHY CHOOSE US
-========================= -->
+<!-- =====================================================
+     INDUSTRIES
+===================================================== -->
 
-<section id="why" class="why-us">
+<section id="industries" class="industries">
 
 <div class="container">
 
-<div class="section-title">
 
-<h2>
-WHY CHOOSE US
-</h2>
+<div class="section-heading">
 
-<p>
-Professional service you can rely on
-</p>
-
+<div class="section-small">
+INDUSTRIES WE SERVE
 </div>
 
-
-<div class="why-grid">
-
-
-<div class="why-card">
-
-<div class="big-icon">
-⭐
-</div>
-
-<h3>
-Premium Quality
-</h3>
-
-<p>
-Quality-focused sourcing for your business requirements.
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="big-icon">
-🚚
-</div>
-
-<h3>
-Timely Delivery
-</h3>
-
-<p>
-We work to provide timely and dependable supply.
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="big-icon">
-💰
-</div>
-
-<h3>
-Competitive Prices
-</h3>
-
-<p>
-Competitive market-based pricing for customers.
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="big-icon">
-🤝
-</div>
-
-<h3>
-Customer Support
-</h3>
-
-<p>
-Professional communication and customer-focused service.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     LOCATION
-========================= -->
-
-<section id="location" class="location-section">
-
-<div class="container location-box">
-
-
-<div class="location-info">
-
-<h2>
-Visit Our Location
-</h2>
-
-<p>
-Alpha Corporation
-</p>
-
-<p>
-Shop Q6, Main Jamia Masjid Road,
-Rawalpindi, Pakistan.
-</p>
-
-<p>
-Click the location button to open
-our location directly in Google Maps.
-</p>
-
-
-<a
-class="map-button"
-href="https://www.google.com/maps/search/?api=1&query=Shop+Q6+Main+Jamia+Masjid+Road+Rawalpindi+Pakistan"
-target="_blank">
-
-📍 Open Google Maps
-
-</a>
-
-</div>
-
-
-
-<!-- LOCATION IMAGE -->
-
-<a
-class="location-image"
-href="https://www.google.com/maps/search/?api=1&query=Shop+Q6+Main+Jamia+Masjid+Road+Rawalpindi+Pakistan"
-target="_blank">
-
-<img
-src="LocationMap.jpg"
-alt="Alpha Corporation Location Map">
-
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact" class="contact">
-
-<div class="container contact-grid">
-
-
-<div class="contact-item">
-
-<div class="contact-icon">
-📞
-</div>
-
-<div>
-
-<h4>
-CALL US
-</h4>
-
-<a href="tel:+923129336471">
-0312-9336471
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="contact-item">
-
-<div class="contact-icon">
-📱
-</div>
-
-<div>
-
-<h4>
-CONTACT
-</h4>
-
-<a href="tel:+923129336481">
-0312-9336481
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="contact-item">
-
-<div class="contact-icon">
-✉️
-</div>
-
-<div>
-
-<h4>
-EMAIL
-</h4>
-
-<a href="mailto:syedjawadalikazmi07@gmail.com">
-syedjawadalikazmi07@gmail.com
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="contact-item">
-
-<div class="contact-icon">
-📍
-</div>
-
-<div>
-
-<h4>
-ADDRESS
-</h4>
-
-<p>
-Shop Q6 Main Jamia Masjid Road,
-Rawalpindi, Pakistan
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-<div class="container">
-
-<p>
-© 2026 Alpha Corporation. All Rights Reserved.
-</p>
-
-<p>
-Cosmetic • Pharmaceutical • Nutraceutical •
-Food & Beverage • Laboratory • Industrial Chemicals
-</p>
-
-</div>
-
-</footer>
-
-
-</body>
-  </html>
+<
