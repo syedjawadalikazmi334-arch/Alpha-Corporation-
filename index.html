@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Alpha Corporation | Chemical, Cosmetic & Nutraceutical Raw Material Supplier in Pakistan
-    </title>
+    <title>Alpha Corporation | Chemical & Raw Material Supplier Pakistan</title>
 
-    <meta name="description"
-        content="Alpha Corporation is a supplier of chemical, cosmetic raw materials, pharmaceutical raw materials, nutraceutical products, vitamins and essential oils across Pakistan.">
+    <meta name="description" content="Alpha Corporation - Supplier of cosmetic, pharmaceutical, nutraceutical, food & beverage, laboratory and industrial chemicals and raw materials in Pakistan. Since 2019.">
 
-    <meta name="keywords"
-        content="chemical supplier Pakistan, cosmetic raw materials Pakistan, nutraceutical supplier Pakistan, essential oils supplier Pakistan, pharmaceutical raw materials Pakistan, Alpha Corporation, Kojic Acid supplier Pakistan, L-Glutathione supplier Pakistan, Alpha Arbutin supplier Pakistan">
+    <meta name="keywords" content="Alpha Corporation, chemical supplier Pakistan, chemicals supplier Rawalpindi, pharmaceutical raw materials, cosmetic raw materials, nutraceutical chemicals, industrial chemicals, laboratory chemicals">
 
     <meta name="author" content="Alpha Corporation">
 
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical"
-        href="https://syedjawadalikazmi334-arch.github.io/Alpha-Corporation/">
-
-    <!-- Open Graph -->
-
-    <meta property="og:title"
-        content="Alpha Corporation | Chemical & Raw Material Supplier in Pakistan">
-
-    <meta property="og:description"
-        content="Chemical, cosmetic, pharmaceutical, nutraceutical raw materials and essential oils supplier across Pakistan.">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:url"
-        content="https://syedjawadalikazmi334-arch.github.io/Alpha-Corporation/">
-
-    <!-- Favicon -->
-
-    <link rel="icon"
-        href="IMG-20250917-WA1735.jpg"
-        type="image/jpeg">
-
-
     <style>
 
-        /* =========================
-           GLOBAL
-        ========================= */
+        /* ==============================
+           ALPHA CORPORATION COLOR SCHEME
+           ============================== */
+
+        :root {
+            --navy: #063b78;
+            --dark-navy: #032951;
+            --green: #16833b;
+            --light-green: #eaf7ef;
+            --white: #ffffff;
+            --light: #f5f8fc;
+            --text: #1d2939;
+            --gray: #667085;
+            --border: #dce5ef;
+        }
 
         * {
             margin: 0;
@@ -62,9 +42,9 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background: var(--light);
+            color: var(--text);
             line-height: 1.6;
-            color: #222222;
-            background: #ffffff;
         }
 
         img {
@@ -72,1094 +52,816 @@
             display: block;
         }
 
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        .hero {
-    background:
-        linear-gradient(rgba(3, 45, 75, 0.70), rgba(8, 127, 140, 0.65)),
-        url('pexels-tiger-lily4483774.jpg') center/cover no-repeat;
-
-    color: #ffffff;
-    text-align: center;
-    padding: 110px 20px;
-    min-height: 580px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h2 {
-    font-size: 46px;
-    margin-bottom: 18px;
-    text-shadow: 2px 3px 8px rgba(0,0,0,0.45);
-}
-
-.hero p {
-    font-size: 20px;
-    max-width: 850px;
-    margin: 0 auto 30px;
-    text-shadow: 1px 2px 5px rgba(0,0,0,0.35);
-}
-            );
-
-            color: #ffffff;
-
-            padding: 15px 5%;
-
-            position: sticky;
-            top: 0;
-
-            z-index: 1000;
-
-            box-shadow:
-                0 3px 15px rgba(0, 0, 0, 0.20);
+        a {
+            text-decoration: none;
         }
 
-        .header-container {
+        /* ==============================
+           HEADER
+           ============================== */
 
+        header {
+            background: var(--white);
+            border-bottom: 4px solid var(--green);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .navbar {
             max-width: 1200px;
-
             margin: auto;
-
+            min-height: 78px;
+            padding: 10px 20px;
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
-
             gap: 20px;
         }
 
-        .logo-area {
-
+        .brand {
             display: flex;
-
             align-items: center;
-
             gap: 12px;
         }
 
-        .logo-area img {
-
-            width: 65px;
-            height: 65px;
-
-            object-fit: contain;
-
-            border-radius: 10px;
-
-            background: #ffffff;
-
-            padding: 4px;
-
-            box-shadow:
-                0 3px 10px rgba(0,0,0,0.20);
+        .brand-logo {
+            font-size: 27px;
+            font-weight: 900;
+            color: var(--navy);
+            letter-spacing: 1px;
         }
 
-        .logo-area h1 {
-
-            font-size: 24px;
-
-            color: #ffffff;
-
-            margin-bottom: 2px;
+        .brand-logo span {
+            color: var(--green);
         }
 
-        .logo-area p {
-
-            font-size: 12px;
-
-            color: #eaf7ff;
+        .brand-tagline {
+            font-size: 11px;
+            color: var(--gray);
+            font-weight: 600;
         }
 
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        nav ul {
-
-            list-style: none;
-
+        nav {
             display: flex;
-/* ================= LOCATION ================= */
+            align-items: center;
+            gap: 22px;
+        }
 
-#location {
-    background: linear-gradient(135deg, #063970, #087f8c);
-    color: #ffffff;
-    padding: 70px 6%;
-}
+        nav a {
+            color: var(--navy);
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
 
-#location .section-title {
-    color: #ffffff;
-}
+        nav a:hover {
+            color: var(--green);
+        }
 
-.location-grid {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    align-items: center;
-}
+        .nav-whatsapp {
+            background: var(--green);
+            color: white !important;
+            padding: 10px 16px;
+            border-radius: 25px;
+        }
 
-.location-text h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
+        .nav-whatsapp:hover {
+            background: #0e6c30;
+        }
 
-.location-text p {
-    margin-bottom: 10px;
-}
+        /* ==============================
+           HERO / WAREHOUSE
+           ============================== */
 
-.map-image img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-    border-radius: 16px;
-    background: #ffffff;
-    padding: 7px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-}
-
-@media (max-width: 900px) {
-    .location-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-            text-align: center;
-
-            padding: 80px 20px;
-
-            color: #ffffff;
-
+        .hero {
+            position: relative;
+            min-height: 580px;
             background:
-
-                linear-gradient(
-                    rgba(10, 30, 80, 0.72),
-                    rgba(8, 127, 140, 0.68)
-                ),
-
-                url("pexels-tiger-lily4483774.jpg")
-                center center / cover no-repeat;
+                linear-gradient(rgba(3,41,81,0.76), rgba(3,41,81,0.68)),
+                url("1007996423.jpg") center center / cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
         }
 
         .hero-content {
-
             max-width: 900px;
-
-            margin: auto;
+            color: white;
         }
 
-        .hero h2 {
-
-            font-size: 48px;
-
+        .hero-badge {
+            display: inline-block;
+            background: var(--green);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: bold;
             margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
 
-            text-shadow:
-                2px 3px 8px rgba(0,0,0,0.45);
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 68px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #8ee0a7;
         }
 
         .hero p {
-
-            font-size: 20px;
-
-            max-width: 850px;
-
-            margin: 0 auto 30px;
-
-            text-shadow:
-                1px 2px 5px rgba(0,0,0,0.40);
+            font-size: clamp(17px, 2vw, 22px);
+            max-width: 760px;
+            margin: auto;
+            color: #f2f7ff;
         }
 
-
-        /* =========================
-           BUTTONS
-        ========================= */
+        .hero-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
 
         .btn {
-
             display: inline-block;
-
-            background: #ffe066;
-
-            color: #1535c4;
-
-            text-decoration: none;
-
-            padding: 13px 28px;
-
+            padding: 13px 25px;
             border-radius: 30px;
-
             font-weight: bold;
-
-            margin: 6px;
-
             transition: 0.3s;
-
-            box-shadow:
-                0 4px 12px rgba(0,0,0,0.20);
-        }
-
-        .btn:hover {
-
-            background: #ffffff;
-
-            color: #1535c4;
-
-            transform: translateY(-3px);
         }
 
         .btn-green {
-
-            background: #16a085;
-
-            color: #ffffff;
+            background: var(--green);
+            color: white;
         }
 
         .btn-green:hover {
-
-            background: #ffffff;
-
-            color: #16a085;
+            transform: translateY(-3px);
+            background: #0d6e31;
         }
 
+        .btn-white {
+            background: white;
+            color: var(--navy);
+        }
 
-        /* =========================
-           GENERAL SECTIONS
-        ========================= */
+        .btn-white:hover {
+            transform: translateY(-3px);
+        }
+
+        /* ==============================
+           GENERAL SECTION
+           ============================== */
 
         section {
-
-            padding: 70px 5%;
+            padding: 70px 20px;
         }
 
         .container {
-
             max-width: 1200px;
-
             margin: auto;
         }
 
-        .section-title {
-
+        .section-heading {
             text-align: center;
-
-            color: #1535c4;
-
-            font-size: 34px;
-
-            margin-bottom: 15px;
+            margin-bottom: 45px;
         }
 
-        .section-subtitle {
-
-            text-align: center;
-
-            color: #666666;
-
-            max-width: 800px;
-
-            margin: 0 auto 40px;
+        .section-heading h2 {
+            color: var(--navy);
+            font-size: clamp(28px, 4vw, 42px);
+            margin-bottom: 10px;
         }
 
+        .section-heading h2 span {
+            color: var(--green);
+        }
 
-        /* =========================
+        .section-heading p {
+            color: var(--gray);
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* ==============================
            ABOUT
-        ========================= */
+           ============================== */
 
-        #about {
-
-            background: #ffffff;
+        .about {
+            background: white;
         }
 
         .about-grid {
-
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
-            gap: 40px;
-
+            gap: 45px;
             align-items: center;
         }
 
+        .about-image {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.14);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .about-text h3 {
-
-            color: #087f8c;
-
-            font-size: 27px;
-
+            color: var(--navy);
+            font-size: 30px;
             margin-bottom: 15px;
         }
 
         .about-text p {
-
+            color: var(--gray);
             margin-bottom: 15px;
-
-            font-size: 17px;
         }
 
-        .warehouse-image img {
-
-            width: 100%;
-
-            height: 380px;
-
-            object-fit: cover;
-
-            border-radius: 18px;
-
-            box-shadow:
-                0 8px 25px rgba(0,0,0,0.20);
-
-            border: 5px solid #eef9ff;
+        .since {
+            color: var(--green);
+            font-weight: 800;
+            font-size: 18px;
         }
 
-
-        /* =========================
-           PRODUCT CATEGORIES
-        ========================= */
-
-        #categories {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #eef9ff,
-                    #f3fffc
-                );
-        }
+        /* ==============================
+           SERVICES / CATEGORIES
+           ============================== */
 
         .categories {
+            background: var(--light);
+        }
 
+        .category-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap: 22px;
-
-            max-width: 1200px;
-
-            margin: auto;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
         }
 
-        .category {
-
-            background: #ffffff;
-
+        .category-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
             padding: 28px 20px;
-
             text-align: center;
-
-            border-radius: 15px;
-
-            border-top:
-                5px solid #1535c4;
-
-            box-shadow:
-                0 5px 18px rgba(0,0,0,0.08);
-
             transition: 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
         }
 
-        .category:hover {
-
-            transform: translateY(-6px);
-
-            border-top-color: #16a085;
+        .category-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--green);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.10);
         }
 
         .category-icon {
-
-            font-size: 42px;
-
-            margin-bottom: 12px;
-        }
-
-        .category h3 {
-
-            color: #1535c4;
-
-            margin-bottom: 10px;
-        }
-
-
-        /* =========================
-           PRODUCTS
-        ========================= */
-
-        #products {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #f5f9ff,
-                    #eefbf9
-                );
-        }
-
-        .product-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 12px;
-
-            max-width: 1200px;
-
-            margin: auto;
-        }
-
-        .product {
-
-            background: #ffffff;
-
-            padding: 13px 15px;
-
-            border-radius: 8px;
-
-            border-left:
-                5px solid #1535c4;
-
-            box-shadow:
-                0 3px 9px rgba(0,0,0,0.07);
-
-            font-weight: 600;
-
-            transition: 0.3s;
-        }
-
-        .product:hover {
-
-            transform: translateY(-3px);
-
-            border-left-color: #16a085;
-
-            box-shadow:
-                0 7px 16px rgba(0,0,0,0.12);
-        }
-
-
-        /* =========================
-           WHY US
-        ========================= */
-
-        #why-us {
-
-            background: #ffffff;
-        }
-
-        .why-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap: 20px;
-
-            max-width: 1200px;
-
-            margin: auto;
-        }
-
-        .why-box {
-
-            text-align: center;
-
-            padding: 30px 20px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #f5f8ff,
-                    #f2fffc
-                );
-
-            border-radius: 15px;
-
-            border: 1px solid #dceaf4;
-
-            box-shadow:
-                0 4px 14px rgba(0,0,0,0.06);
-
-            transition: 0.3s;
-        }
-
-        .why-box:hover {
-
-            transform: translateY(-5px);
-
-            box-shadow:
-                0 8px 20px rgba(0,0,0,0.12);
-        }
-
-        .why-icon {
-
-            font-size: 42px;
-
-            margin-bottom: 10px;
-        }
-
-        .why-box h3 {
-
-            color: #087f8c;
-
-            margin-bottom: 8px;
-        }
-
-
-        /* =========================
-           LOCATION
-        ========================= */
-
-        #location {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #063970,
-                    #087f8c,
-                    #16a085
-                );
-
-            color: #ffffff;
-        }
-
-        #location .section-title {
-
-            color: #ffffff;
-        }
-
-        #location .section-subtitle {
-
-            color: #e8ffff;
-        }
-
-        .location-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
-            gap: 40px;
-
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: var(--light-green);
+            color: var(--green);
+            display: flex;
             align-items: center;
-        }
-
-        .location-text h3 {
-
+            justify-content: center;
             font-size: 29px;
-
-            margin-bottom: 15px;
-
-            color: #ffe066;
         }
 
-        .location-text p {
-
-            margin-bottom: 10px;
-
-            font-size: 17px;
-        }
-
-        .map-image img {
-
-            width: 100%;
-
-            max-height: 420px;
-
-            object-fit: cover;
-
-            border-radius: 18px;
-
-            background: #ffffff;
-
-            padding: 7px;
-
-            box-shadow:
-                0 8px 25px rgba(0,0,0,0.30);
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        #contact {
-
-            background: #f5f9fc;
-        }
-
-        .contact-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 25px;
-
-            max-width: 1100px;
-
-            margin: auto;
-        }
-
-        .contact-card {
-
-            background: #ffffff;
-
-            padding: 30px 20px;
-
-            text-align: center;
-
-            border-radius: 15px;
-
-            box-shadow:
-                0 5px 18px rgba(0,0,0,0.10);
-
-            border-top:
-                5px solid #1535c4;
-        }
-
-        .contact-card span {
-
-            font-size: 38px;
-        }
-
-        .contact-card h3 {
-
-            color: #1535c4;
-
-            margin: 10px 0;
-        }
-
-        .contact-card a {
-
-            color: #087f8c;
-
-            text-decoration: none;
-
-            font-weight: bold;
-        }
-
-        .contact-card a:hover {
-
-            color: #1535c4;
-        }
-
-
-        /* =========================
-           WHATSAPP
-        ========================= */
-
-        .whatsapp {
-
-            display: inline-block;
-
-            background: #25D366;
-
-            color: #ffffff !important;
-
-            padding: 13px 28px;
-
-            border-radius: 30px;
-
-            margin-top: 20px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            box-shadow:
-                0 4px 12px rgba(0,0,0,0.18);
-
-            transition: 0.3s;
-        }
-
-        .whatsapp:hover {
-
-            transform: translateY(-3px);
-
-            background: #20b957;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-
-            background: #042b4c;
-
-            color: #ffffff;
-
-            text-align: center;
-
-            padding: 30px 20px;
-        }
-
-        footer h3 {
-
-            color: #ffe066;
-
+        .category-card h3 {
+            color: var(--navy);
             margin-bottom: 8px;
         }
 
-        footer p {
-
-            margin: 5px 0;
-
+        .category-card p {
+            color: var(--gray);
             font-size: 14px;
         }
 
+        /* ==============================
+           PRODUCT LIST IMAGE
+           ============================== */
 
-        /* =========================
-           TABLET
-        ========================= */
+        .products {
+            background: white;
+        }
+
+        .product-image-box {
+            max-width: 1050px;
+            margin: auto;
+            background: white;
+            padding: 12px;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+            border: 1px solid var(--border);
+        }
+
+        .product-image-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-note {
+            text-align: center;
+            color: var(--gray);
+            margin-top: 20px;
+        }
+
+        /* ==============================
+           STOCK IN HAND
+           ============================== */
+
+        .stock {
+            background: var(--light-green);
+        }
+
+        .stock-box {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 12px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+        }
+
+        .stock-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* ==============================
+           WHY CHOOSE US
+           ============================== */
+
+        .why {
+            background: var(--navy);
+            color: white;
+        }
+
+        .why .section-heading h2 {
+            color: white;
+        }
+
+        .why .section-heading p {
+            color: #d9e5f3;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 25px 15px;
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 15px;
+        }
+
+        .why-card .number {
+            font-size: 38px;
+            font-weight: 900;
+            color: #8ee0a7;
+        }
+
+        .why-card h3 {
+            margin: 5px 0;
+        }
+
+        .why-card p {
+            color: #d9e5f3;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           LOCATION
+           ============================== */
+
+        .location {
+            background: white;
+        }
+
+        .location-card {
+            max-width: 900px;
+            margin: auto;
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+        }
+
+        .location-card a {
+            display: block;
+            position: relative;
+        }
+
+        .location-card img {
+            width: 100%;
+            max-height: 650px;
+            object-fit: cover;
+        }
+
+        .map-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(3,41,81,0.08);
+            transition: 0.3s;
+        }
+
+        .map-overlay span {
+            background: var(--green);
+            color: white;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+        }
+
+        .location-card a:hover .map-overlay {
+            background: rgba(3,41,81,0.35);
+        }
+
+        .location-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .location-info h3 {
+            color: var(--navy);
+            margin-bottom: 7px;
+        }
+
+        .location-info p {
+            color: var(--gray);
+        }
+
+        /* ==============================
+           CONTACT
+           ============================== */
+
+        .contact {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .contact-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--gray);
+        }
+
+        .contact-card a:hover {
+            color: var(--green);
+        }
+
+        /* ==============================
+           FOOTER
+           ============================== */
+
+        footer {
+            background: var(--dark-navy);
+            color: white;
+            padding: 35px 20px 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+
+        .footer-logo span {
+            color: #8ee0a7;
+        }
+
+        footer p {
+            color: #c8d6e5;
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            margin-top: 25px;
+            padding-top: 18px;
+            font-size: 13px;
+            color: #aebdce;
+        }
+
+        /* ==============================
+           FLOATING WHATSAPP
+           ============================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            z-index: 2000;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* ==============================
+           RESPONSIVE
+           ============================== */
 
         @media (max-width: 900px) {
 
-            .header-container {
-
-                flex-direction: column;
-
-                text-align: center;
+            nav {
+                gap: 10px;
             }
 
-            .logo-area {
-
-                justify-content: center;
+            nav a:not(.nav-whatsapp) {
+                display: none;
             }
 
-            nav ul {
-
-                justify-content: center;
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .hero h2 {
-
-                font-size: 38px;
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .about-grid,
-            .location-grid {
-
+            .about-grid {
                 grid-template-columns: 1fr;
             }
 
-            .categories,
-            .why-grid {
-
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
-
-            .product-grid {
-
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
-
-            .contact-grid {
-
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
         }
-
-
-        /* =========================
-           MOBILE
-        ========================= */
 
         @media (max-width: 600px) {
 
-            header {
-
-                padding: 12px 4%;
+            .navbar {
+                min-height: 65px;
             }
 
-            .logo-area h1 {
-
-                font-size: 20px;
+            .brand-logo {
+                font-size: 21px;
             }
 
-            .logo-area p {
-
-                font-size: 11px;
-            }
-
-            .logo-area img {
-
-                width: 55px;
-
-                height: 55px;
-            }
-
-            nav ul {
-
-                gap: 5px;
-            }
-
-            nav ul li a {
-
-                font-size: 12px;
-
-                padding: 6px 7px;
+            .brand-tagline {
+                display: none;
             }
 
             .hero {
-
-                min-height: 500px;
-
-                padding: 60px 15px;
-            }
-
-            .hero h2 {
-
-                font-size: 30px;
-            }
-
-            .hero p {
-
-                font-size: 16px;
+                min-height: 520px;
             }
 
             section {
-
-                padding: 50px 5%;
+                padding: 55px 15px;
             }
 
-            .section-title {
-
-                font-size: 28px;
-            }
-
-            .categories,
-            .why-grid,
-            .product-grid,
-            .contact-grid {
-
+            .category-grid {
                 grid-template-columns: 1fr;
             }
 
-            .warehouse-image img {
-
-                height: 300px;
+            .why-grid {
+                grid-template-columns: 1fr;
             }
 
-            .map-image img {
-
-                max-height: 320px;
+            .contact-grid {
+                grid-template-columns: 1fr;
             }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 90%;
+            }
+
         }
 
     </style>
-
 </head>
-
 
 <body>
 
+    <!-- ==============================
+         HEADER
+         ============================== -->
 
-<!-- =========================
-     HEADER
-========================= -->
+    <header>
 
-<header>
+        <div class="navbar">
 
-    <div class="header-container">
+            <div class="brand">
 
-        <div class="logo-area">
+                <div>
+                    <div class="brand-logo">
+                        ALPHA <span>CORPORATION</span>
+                    </div>
 
-            <img
-                src="IMG-20250917-WA1735.jpg"
-                alt="Alpha Corporation Logo"
-            >
+                    <div class="brand-tagline">
+                        Chemical & Raw Material Supplier
+                    </div>
+                </div>
 
-            <div>
+            </div>
 
-                <h1>ALPHA CORPORATION</h1>
+            <nav>
 
-                <p>
-                    Chemical & Raw Material Supplier in Pakistan
-                </p>
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#products">Products</a>
+
+                <a href="#stock">Stock</a>
+
+                <a href="#location">Location</a>
+
+                <a
+                    class="nav-whatsapp"
+                    href="https://wa.me/923129336471"
+                    target="_blank">
+                    WhatsApp
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         HERO / WAREHOUSE IMAGE
+         ============================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                Since 2019
+            </div>
+
+            <h1>
+                ALPHA <span>CORPORATION</span>
+            </h1>
+
+            <p>
+                Reliable Supplier of Cosmetic, Pharmaceutical,
+                Nutraceutical, Food & Beverage, Laboratory and
+                Industrial Chemicals & Raw Materials in Pakistan.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn btn-green">
+                    View Product List
+                </a>
+
+                <a href="#location" class="btn btn-white">
+                    View Location
+                </a>
 
             </div>
 
         </div>
 
-
-        <nav>
-
-            <ul>
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#categories">Categories</a>
-                </li>
-
-                <li>
-                    <a href="#products">Products</a>
-                </li>
-
-                <li>
-                    <a href="#why-us">Why Us</a>
-                </li>
-
-                <li>
-                    <a href="#location">Location</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-</header>
+    </section>
 
 
+    <!-- ==============================
+         ABOUT
+         ============================== -->
 
-<!-- =========================
-     HOME
-========================= -->
+    <section class="about" id="about">
 
-<section id="home" class="hero">
+        <div class="container">
 
-    <div class="hero-content">
+            <div class="about-grid">
 
-        <h2>
-            Alpha Corporation
-        </h2>
+                <div class="about-image">
 
-        <p>
+                    <img
+                        src="1007772163.jpg"
+                        alt="Alpha Corporation Chemical Raw Materials">
 
-            Chemical, Cosmetic, Pharmaceutical,
-            Nutraceutical & Essential Oils
-            Raw Material Supplier in Pakistan
+                </div>
 
-        </p>
+                <div class="about-text">
 
+                    <div class="since">
+                        ALPHA CORPORATION — Since 2019
+                    </div>
 
-        <a
-            class="btn"
-            href="#products"
-        >
-            View Products
-        </a>
+                    <h3>
+                        Chemical & Raw Material Supplier
+                    </h3>
 
+                    <p>
+                        Alpha Corporation is a supplier of
+                        chemical and raw materials serving
+                        cosmetic, pharmaceutical, nutraceutical,
+                        food & beverage, laboratory and industrial
+                        sectors.
+                    </p>
 
-        <a
-            class="btn btn-green"
-            href="https://wa.me/923129336471"
-            target="_blank"
-            rel="noopener"
-        >
-            WhatsApp Us
-        </a>
+                    <p>
+                        We focus on reliable quality, competitive
+                        prices, timely delivery and customer
+                        satisfaction.
+                    </p>
 
-    </div>
+                    <a href="#contact" class="btn btn-green">
+                        Contact Us
+                    </a>
 
-</section>
+                </div>
 
+            </div>
 
+        </div>
 
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section id="about">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            About Alpha Corporation
-        </h2>
-
-        <p class="section-subtitle">
-
-            Reliable sourcing and supply of quality
-            chemicals and raw materials for businesses
-            across Pakistan.
-
-        </p>
+    </section>
 
 
-        <div class="about-grid">
+    <!-- ==============================
+         BUSINESS CATEGORIES
+         ============================== -->
 
+    <section class="categories">
 
-            <div class="about-text">
+        <div class="container">
 
-                <h3>
-                    Your Trusted Raw Material Partner
-                </h3>
+            <div class="section-heading">
 
+                <h2>
+                    Our <span>Categories</span>
+                </h2>
 
                 <p>
-
-                    Alpha Corporation is a Pakistan-based
-                    supplier and trading company dealing in
-                    chemical, cosmetic, pharmaceutical,
-                    nutraceutical and industrial raw materials.
-
-                </p>
-
-
-                <p>
-
-                    We supply a broad range of raw materials,
-                    ingredients, chemicals, vitamins,
-                    essential oils, fragrances and specialty
-                    products for manufacturers, formulators
-                    and businesses across Pakistan.
-
-                </p>
-
-
-                <p>
-
-                    Our focus is dependable supply,
-                    competitive pricing, product availability
-                    and timely service for our customers.
-
+                    Raw materials and chemicals for multiple
+                    manufacturing industries.
                 </p>
 
             </div>
 
 
-            <!-- WAREHOUSE IMAGE -->
+            <div class="category-grid">
 
-            <div class="warehouse-image">
 
-                <img
-                    src="pexels-tiger-lily4483774.jpg"
-                    alt="Alpha Corporation Warehouse"
-                >
-    
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        💊
+                    </div>
+
+                    <h3>
+                        Pharmaceutical
+                    </h3>
+
+                    <p>
+       
