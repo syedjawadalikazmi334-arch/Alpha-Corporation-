@@ -137,23 +137,28 @@
 
         .hero {
             position: relative;
-            min-height: 580px;
-            background:
-                linear-gradient(rgba(3,41,81,0.76), rgba(3,41,81,0.68)),
-                url("1007996423.jpg") center center / cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-        }
+            .hero {
+    position: relative;
+    min-height: 580px;
 
-        .hero-content {
-            max-width: 900px;
-            color: white;
-        }
+    background-image:
+        linear-gradient(
+            rgba(3, 41, 81, 0.62),
+            rgba(3, 41, 81, 0.62)
+        ),
+        url("1007996423.jpg");
 
-        .hero-badge {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 80px 20px;
+            }
             display: inline-block;
             background: var(--green);
             padding: 8px 20px;
