@@ -77,12 +77,34 @@
            HEADER
         ========================= */
 
-        header {
-            background: linear-gradient(
-                135deg,
-                #1535c4,
-                #168bd1,
-                #16a085
+        .hero {
+    background:
+        linear-gradient(rgba(3, 45, 75, 0.70), rgba(8, 127, 140, 0.65)),
+        url('pexels-tiger-lily4483774.jpg') center/cover no-repeat;
+
+    color: #ffffff;
+    text-align: center;
+    padding: 110px 20px;
+    min-height: 580px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 46px;
+    margin-bottom: 18px;
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.45);
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 850px;
+    margin: 0 auto 30px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.35);
+}
             );
 
             color: #ffffff;
