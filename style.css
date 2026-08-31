@@ -221,7 +221,7 @@ nav a:hover::after {
 .btn.outline:hover {
   color: var(--navy);
   background: #ffffff;
-  color: #071d32;
+  color: var(--navy);
 }
 
 .btn.full {
