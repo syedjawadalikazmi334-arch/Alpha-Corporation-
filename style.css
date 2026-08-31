@@ -1,4 +1,4 @@
-o/* =========================================================
+/* =========================================================
    ALPHA CORPORATION
    PREMIUM CORPORATE WEBSITE CSS
    ========================================================= */
@@ -267,7 +267,7 @@ nav a:hover::after {
     url("./pexels-tiger-lily-4483774.jpg");
 
   background-size: cover;
-  background-position: center;
+  color: #071d32 !important;
   background-repeat: no-repeat;
 }
 
