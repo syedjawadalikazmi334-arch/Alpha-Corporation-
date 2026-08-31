@@ -1202,3 +1202,76 @@ footer p {
 #about .about-content h2 {
   color: #071d32;
 }
+/* =========================================================
+   MACHINERY & PRINTING SOLUTIONS
+   ========================================================= */
+
+.machinery-section {
+  background: linear-gradient(135deg, #f7fcff, #eefaff);
+  padding: 95px 6%;
+}
+
+.machinery-section .heading {
+  max-width: 850px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.machinery-section .heading h2 {
+  color: var(--navy);
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.machinery-section .heading p:not(.tag) {
+  color: var(--gray);
+  max-width: 760px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.machinery-section .cards {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+
+.machinery-section .card {
+  height: 100%;
+}
+
+.machinery-section .card h3 {
+  color: var(--navy);
+}
+
+.machinery-section .card p {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.machinery-section .section-cta {
+  text-align: center;
+  margin-top: 45px;
+}
+
+@media (max-width: 1000px) {
+  .machinery-section .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .machinery-section {
+    padding: 70px 5%;
+  }
+
+  .machinery-section .cards {
+    grid-template-columns: 1fr;
+  }
+}
