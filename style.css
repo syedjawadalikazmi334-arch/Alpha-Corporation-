@@ -1,4 +1,4 @@
-/* =========================================================
+o/* =========================================================
    ALPHA CORPORATION
    PREMIUM CORPORATE WEBSITE CSS
    ========================================================= */
@@ -1192,6 +1192,13 @@ footer p {
     font-size: 30px;
   }
 
-  .hero .btn {
+    .hero .btn {
     width: 100%;
-    max-wi
+    max-width: 100%;
+  }
+}
+
+/* ABOUT HEADING COLOR */
+#about .about-content h2 {
+  color: #071d32;
+}
